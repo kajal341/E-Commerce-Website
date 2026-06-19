@@ -1,0 +1,562 @@
+<!DOCTYPE htmt>
+<html>
+<head>
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="shopping.html">
+    <link rel="stylesheet" href="see-all.html">
+       <link rel="stylesheet" href="contact.html">
+           <link rel="stylesheet" href="faqs.html">
+           <link rel="stylesheet" href="blogs.html">
+                      <link rel="stylesheet" href="vegetalbles&fuits.html">
+                        <link rel="stylesheet" href="lotus-card.html">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<style>
+.app1{
+    border-radius: 30px;
+    height: 45px;
+    width: 150px;
+    color:red;
+    border: none;
+    font-weight: bold;
+    border: 2px solid red;
+    gap: 20px;
+    background-color: white;
+}
+.app1:hover{
+    background-color:red;
+    font-weight: bold;
+     color:white;
+}
+#potato1{
+    display: none;
+}
+#tomato1{
+    display: none;
+}
+   #mirchi1{
+    display: none;
+} 
+</style>
+    
+
+</head>
+    
+    <body>
+        <!--header-->
+<div class="header">
+<div class="header-items"></div>
+ <div class="header-items"></div>
+ <div class="header-items"><select>
+    <option>EN </option>
+     <option>EN - English</option>
+ </select></div>
+ <div class="header-items" id="sign">Sign In/Sign UP Here</div>
+
+</div>
+
+<div class="header1">
+<div class="header-items1 logo"><img src="https://www.quickcartapp.in/uploads/media/2025/web-logo-svg1.svg" height="80px" width="120px"></div>
+ <div class="header-items1"><a href="shopping.html" style="color: black; text-decoration: aliceblue;">Home</a></div>
+  <div class="header-items1"><a href="contact.html" style="color: black; text-decoration: aliceblue;">Contact Us</a></div>
+   <div class="header-items1"><a href="faqs.html" style="color: black; text-decoration: aliceblue;">FAQs</a></div>
+ <div class="header-items1"><a href="blogs.html"style="color: black; text-decoration: aliceblue;">Blogs</a></div>
+ <div class="header-items1" id="sign1"><i class="fa-solid fa-magnifying-glass" style="color: rgb(116, 192, 252);"></i>    <i class="fa-solid fa-cart-arrow-down" style="color: rgb(116, 192, 252);"></i></div>
+
+</div>
+
+<!---next-->
+
+
+<div class="container" id="potato">
+<div class="row">
+    <div class="col-lg-4"><span style="font-size: 20px;">Attributes</span> <span style="font-size: 20px; margin-left: 140px; color: red;">Filter</span><br><select style="border: none;">
+       <option>Quantity</option>
+        <option>250g</option>
+          <option>500g</option>
+            <option>1kg</option>
+    </select>
+<br><br><span style="font-size: 20px;">Brands</span> <span style="font-size: 20px; margin-left: 160px; color: red;">Filter</span><br><br> <br><button class="app1">Filter</button> <button class="app1" style="margin-left: 20px;">Clear</button></div>
+ 
+<div class="col-lg-8">
+<h2 style="margin-left: 120px; margin-top: 20px;">Products</h2>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_poteto_1kg.png&width=600&quality=80" class="img-fluid" alt="" onclick="card()">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                <h5>Lotus Soft Fresh Paneer 200 g</h5>
+                <p>₹85 <del>₹90</del></p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_tomato_1kg.png&width=600&quality=80" class="img-fluid" alt="" onclick="card1()">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                
+                <h5>Lotus Chaach Masala 280gm</h5>
+                <p>₹10</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_green_chilli_1_kg.png&width=600&quality=80" height="60px" class="img-fluid" alt="" onclick="card2()">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+               <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5> <h5>Amul Fresh Cream, 250 ml</h5>
+                <p>₹70</p>
+            </div>
+        </div>
+
+       
+
+    </div>
+</div>
+
+<!---next-->
+
+<div class="container mt-5" id="potato1">
+  <div class="row">
+
+    <!-- Left Side Small Images -->
+    <div class="col-lg-1">
+      <div class="thumb">
+        <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_poteto_1kg.png&width=900&quality=80" height="50px" width="100px" class="small-img" style="border: 1px solid black; border-radius: 10px; height: 130px; margin-left: -25px; ;"><br><br>
+       
+      </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="col-lg-5">
+      <div class="main-image">
+        <img id="bigImage"
+        src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_poteto_1kg.png&width=900&quality=80" height="350px" width="350px">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-lg-6">
+
+      <h2>Potato (Aloo) 500g</h2>
+
+      <h6>500g</h6>
+      <br>
+      <br>
+<button class="veg" style="border: 1px solid green; border-radius: 10px ; background-color: green; color: white;">Veg</button>
+
+      <h3>₹15</h3>
+      <h5 style="margin-left: -150px;"><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i>  (No Reviews)</h5>
+ <h5 style="margin-left: -320px;">Pack of</h5>
+ <button class="veg" style="border: rgb(21, 130, 184); border-radius: 10px ; background-color: rgb(21, 130, 184); width: 40px; color: white;">1</button>  <button class="veg" style="border: rgb(21, 130, 184);; border-radius: 10px ; background-color: rgb(21, 130, 184); color: white; width: 40px;">2</button>
+      <!-- Quantity -->
+      <div class="qty">
+        <br><button style="background-color: white; color: gray; border-radius: 10px; border: 1px solid gray; width: 110px; font-weight: bold; font-size: 20px; height: 40px;">- 1 +</button>
+       
+        
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: rgba(237, 203, 7, 0.945); color: white; border-radius: 20px; border: 1px solid rgba(237, 203, 7, 0.945);; width: 120px; font-weight: bold; font-size: 15px; height: 40px;">
+          Add To Cart
+        </button>
+
+        <button class="wish" style="background-color: white; border-radius: 20px; border: 1px solid rgba(110, 110, 207, 0.918), 0.945);; width: 90px; font-weight: bold; font-size: 15px; height: 40px;">
+          <i class="fa-regular fa-heart" style="color: rgb(237, 30, 30);"></i>
+        </button>
+
+        <button class="whatsapp" style="background-color: rgb(44, 175, 55); color: white; border-radius: 20px; border: 1px solid rgb(44, 175, 55); width: 100px; font-weight: bold; font-size: 15px; height: 40px;">
+         <i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i>
+        </button>
+
+      </div>
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 70px; font-weight: bold; font-size: 12px; height: 30px;">
+          Amul
+        </button>
+
+        <button class="wish" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 90px; font-weight: bold; font-size: 12px; height: 30px;">
+          Buttermilk
+        </button>
+
+      </div>
+<br><h6 style="color: rgb(12, 147, 244);">Cash on Delivery is eligible for orders above ₹10 and below ₹4500</h6>
+<h6 style="color: gray;">
+Pack of :	1, 2
+</h6>
+<br>
+
+<button class="wish" style="background-color: rgb(12, 147, 244); border: 1px solid rgb(12, 147, 244); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+        <i class="fa-brands fa-twitter" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        <button class="wish" style="background-color: rgb(32, 120, 182); margin-left: 10px; border: 1px solid rgb(32, 120, 182); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-facebook" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(77, 158, 44); margin-left: 10px; border: 1px solid rgb(77, 158, 44); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+  <i class="fa-brands fa-whatsapp" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(216, 38, 38); border: 1px solid rgb(238, 12, 12); margin-left: 10px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-pinterest" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(32, 120, 182); border: 1px solid rgb(12, 147, 244); margin-left: 10px; margin-bottom: 50px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+<i class="fa-brands fa-linkedin" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        
+    </div>
+
+  </div>
+</div>
+<!---next-->
+
+<!---next-->
+
+<div class="container mt-5" id="tomato1">
+  <div class="row">
+
+    <!-- Left Side Small Images -->
+    <div class="col-lg-1">
+      <div class="thumb">
+        <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_tomato_1kg.png&width=600&quality=80" height="50px" width="100px" class="small-img" style="border: 1px solid black; border-radius: 10px; height: 130px; margin-left: -25px; ;"><br><br>
+       
+      </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="col-lg-5">
+      <div class="main-image">
+        <img id="bigImage"
+        src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_tomato_1kg.png&width=600&quality=80" height="350px" width="350px">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-lg-6">
+
+      <h2>Potato (Aloo) 500g</h2>
+
+      <h6>500g</h6>
+      <br>
+      <br>
+<button class="veg" style="border: 1px solid green; border-radius: 10px ; background-color: green; color: white;">Veg</button>
+
+      <h3>₹15</h3>
+      <h5 style="margin-left: -150px;"><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i>  (No Reviews)</h5>
+ <h5 style="margin-left: -320px;">Pack of</h5>
+ <button class="veg" style="border: rgb(21, 130, 184); border-radius: 10px ; background-color: rgb(21, 130, 184); width: 40px; color: white;">1</button>  <button class="veg" style="border: rgb(21, 130, 184);; border-radius: 10px ; background-color: rgb(21, 130, 184); color: white; width: 40px;">2</button>
+      <!-- Quantity -->
+      <div class="qty">
+        <br><button style="background-color: white; color: gray; border-radius: 10px; border: 1px solid gray; width: 110px; font-weight: bold; font-size: 20px; height: 40px;">- 1 +</button>
+       
+        
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: rgba(237, 203, 7, 0.945); color: white; border-radius: 20px; border: 1px solid rgba(237, 203, 7, 0.945);; width: 120px; font-weight: bold; font-size: 15px; height: 40px;">
+          Add To Cart
+        </button>
+
+        <button class="wish" style="background-color: white; border-radius: 20px; border: 1px solid rgba(110, 110, 207, 0.918), 0.945);; width: 90px; font-weight: bold; font-size: 15px; height: 40px;">
+          <i class="fa-regular fa-heart" style="color: rgb(237, 30, 30);"></i>
+        </button>
+
+        <button class="whatsapp" style="background-color: rgb(44, 175, 55); color: white; border-radius: 20px; border: 1px solid rgb(44, 175, 55); width: 100px; font-weight: bold; font-size: 15px; height: 40px;">
+         <i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i>
+        </button>
+
+      </div>
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 70px; font-weight: bold; font-size: 12px; height: 30px;">
+          Amul
+        </button>
+
+        <button class="wish" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 90px; font-weight: bold; font-size: 12px; height: 30px;">
+          Buttermilk
+        </button>
+
+      </div>
+<br><h6 style="color: rgb(12, 147, 244);">Cash on Delivery is eligible for orders above ₹10 and below ₹4500</h6>
+<h6 style="color: gray;">
+Pack of :	1, 2
+</h6>
+<br>
+
+<button class="wish" style="background-color: rgb(12, 147, 244); border: 1px solid rgb(12, 147, 244); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+        <i class="fa-brands fa-twitter" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        <button class="wish" style="background-color: rgb(32, 120, 182); margin-left: 10px; border: 1px solid rgb(32, 120, 182); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-facebook" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(77, 158, 44); margin-left: 10px; border: 1px solid rgb(77, 158, 44); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+  <i class="fa-brands fa-whatsapp" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(216, 38, 38); border: 1px solid rgb(238, 12, 12); margin-left: 10px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-pinterest" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(32, 120, 182); border: 1px solid rgb(12, 147, 244); margin-left: 10px; margin-bottom: 50px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+<i class="fa-brands fa-linkedin" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        
+    </div>
+
+  </div>
+</div>
+<!---next-->
+
+<!---next-->
+
+<div class="container mt-5" id="mirchi1">
+  <div class="row">
+
+    <!-- Left Side Small Images -->
+    <div class="col-lg-1">
+      <div class="thumb">
+        <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_green_chilli_1_kg.png&width=600&quality=80" height="50px" width="100px" class="small-img" style="border: 1px solid black; border-radius: 10px; height: 130px; margin-left: -25px; ;"><br><br>
+       
+      </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="col-lg-5">
+      <div class="main-image">
+        <img id="bigImage"
+        src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_green_chilli_1_kg.png&width=600&quality=80" height="350px" width="350px">
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-lg-6">
+
+      <h2>Green Chilli</h2>
+
+      <h6>With Green Packing</h6>
+      <br>
+      <br>
+<button class="veg" style="border: 1px solid green; border-radius: 10px ; background-color: green; color: white;">Veg</button>
+
+      <h3>₹35</h3>
+      <h5 style="margin-left: -150px;"><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i>  (No Reviews)</h5>
+ <h5 style="margin-left: -320px;">Pack of</h5>
+ <button class="veg" style="border: rgb(21, 130, 184); border-radius: 10px ; background-color: rgb(21, 130, 184); width: 40px; color: white;">1</button>  <button class="veg" style="border: rgb(21, 130, 184);; border-radius: 10px ; background-color: rgb(21, 130, 184); color: white; width: 40px;">2</button>
+      <!-- Quantity -->
+      <div class="qty">
+        <br><button style="background-color: white; color: gray; border-radius: 10px; border: 1px solid gray; width: 110px; font-weight: bold; font-size: 20px; height: 40px;">- 1 +</button>
+       
+        
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: rgba(237, 203, 7, 0.945); color: white; border-radius: 20px; border: 1px solid rgba(237, 203, 7, 0.945);; width: 120px; font-weight: bold; font-size: 15px; height: 40px;">
+          Add To Cart
+        </button>
+
+        <button class="wish" style="background-color: white; border-radius: 20px; border: 1px solid rgba(110, 110, 207, 0.918), 0.945);; width: 90px; font-weight: bold; font-size: 15px; height: 40px;">
+          <i class="fa-regular fa-heart" style="color: rgb(237, 30, 30);"></i>
+        </button>
+
+        <button class="whatsapp" style="background-color: rgb(44, 175, 55); color: white; border-radius: 20px; border: 1px solid rgb(44, 175, 55); width: 100px; font-weight: bold; font-size: 15px; height: 40px;">
+         <i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i>
+        </button>
+
+      </div>
+      <div class="btn-box">
+
+      <br>  <button class="cart" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 70px; font-weight: bold; font-size: 12px; height: 30px;">
+          Amul
+        </button>
+
+        <button class="wish" style="background-color: gray; border: 1px solid gray; color: white; border-radius: 10px; width: 90px; font-weight: bold; font-size: 12px; height: 30px;">
+          Buttermilk
+        </button>
+
+      </div>
+<br><h6 style="color: rgb(12, 147, 244);">Cash on Delivery is eligible for orders above ₹10 and below ₹4500</h6>
+<h6 style="color: gray;">
+Pack of :	1, 2
+</h6>
+<br>
+
+<button class="wish" style="background-color: rgb(12, 147, 244); border: 1px solid rgb(12, 147, 244); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+        <i class="fa-brands fa-twitter" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        <button class="wish" style="background-color: rgb(32, 120, 182); margin-left: 10px; border: 1px solid rgb(32, 120, 182); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-facebook" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(77, 158, 44); margin-left: 10px; border: 1px solid rgb(77, 158, 44); color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+  <i class="fa-brands fa-whatsapp" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(216, 38, 38); border: 1px solid rgb(238, 12, 12); margin-left: 10px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+   <i class="fa-brands fa-pinterest" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+         <button class="wish" style="background-color: rgb(32, 120, 182); border: 1px solid rgb(12, 147, 244); margin-left: 10px; margin-bottom: 50px; color: white; border-radius: 10px; width: 40px; font-weight: bold; font-size: 12px; height: 30px;">
+<i class="fa-brands fa-linkedin" style="color: rgb(252, 248, 248);"></i>
+        </button>
+
+        
+    </div>
+
+  </div>
+</div>
+<!---next-->
+
+....<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2F61U2OzCbRoL__AC_UF350%2C350_QL80_.jpg&width=600&quality=80" class="img-fluid" alt="">
+                    <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                <h5>Lotus Soft Fresh Paneer 200 g</h5>
+                <p>₹85 <del>₹90</del></p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FBhindi_lady_finger.png&width=600&quality=80" class="img-fluid" alt="">
+                    <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                
+                <h5>Lotus Chaach Masala 280gm</h5>
+                <p>₹10</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FCabbage1.jpg&width=600&quality=80" height="60px" class="img-fluid" alt="">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+               <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5> <h5>Amul Fresh Cream, 250 ml</h5>
+                <p>₹70</p>
+            </div>
+        </div>
+
+       
+
+    </div>
+</div>
+
+.....<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickCart_Onion_1kg.png&width=600&quality=80" class="img-fluid" alt="">
+                       <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                <h5>Lotus Soft Fresh Paneer 200 g</h5>
+                <p>₹85 <del>₹90</del></p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickCart_Onion_1kg.png&width=600&quality=80" class="img-fluid" alt="">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+                <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5>
+                
+                <h5>Lotus Chaach Masala 280gm</h5>
+                <p>₹10</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="product-card">
+                <img src="https://www.quickcartapp.in/media/image?path=uploads%2Fmedia%2F2025%2FQuickcart_red_chilli_1kg.png&width=600&quality=80" height="60px" class="img-fluid" alt="">
+                      <div class="add-cart">
+        <i class="fa fa-shopping-bag"></i> Add to Cart
+    </div>
+               <h5><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i><i class="fa-solid fa-star" style="color: rgb(141, 139, 131);"></i></h5> <h5>Amul Fresh Cream, 250 ml</h5>
+                <p>₹70</p>
+            </div>
+        </div>
+
+       
+
+    </div>
+</div>
+
+    
+    
+ </div>
+
+</div>
+
+
+
+</div>
+
+
+<!---next-->
+<div class="container-fluid" id="footer">
+    <div class="row">
+<div class="col-lg-3 footer1"><img src="https://www.quickcartapp.in/uploads/media/2025/web-logo-svg1.svg" height="150px" width="150px"><br>QuickCart™ On<br>Airplane Street, Near<br>Inder Giri Ashram,<br>Ward No.03<br>Gopalpura Road,<br>Prabhat Nagar,<br>Sujangarh,<br>Rajasthan - 331507<br><br>Copyright © 2026-2027, All Right<br>Reserved QuickCart<br><i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i> <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i> <i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i></div>
+<div class="col-lg-3"><br><br><b style="color: white;">Call Us</b><br><b>9783104329</b><br><b>Mail Us</b><br>support@quickcartapp.in</div>
+<div class="col-lg-3"><br><br><b style="color: white;">Useful Links</b><br><b>Become a Affiliate User</b><br><b>Return Policy</b><br><b>Shipping Policy</b><br><b>Products</b><br><b>Terms & Condition</b><br><b>Privacy Policy</b><br><b>About Us</b><br><b>Contact Us</b></div>
+<div class="col-lg-3"><br><br><b style="color: white;">About Us</b><br>QuickCart – Anything in Minutes! <i class="fa-solid fa-rocket" style="color: rgb(237, 30, 30);"></i><br>QuickCart is your go-to hyperlocal<br>delivery app, bringing groceries,<br>electronics, daily essentials, and more<br>to your doorstep in just minutes!<br>Experience superfast delivery,<br>competitive prices, and a seamless shopping experience.<br><br><i class="fa-solid fa-shop" style="color:white;"></i> Shop Smart, Shop Quick – Only on QuickCart!</div>
+</div>
+</div>
+
+
+<script>
+    function card(){
+    document.getElementById("potato1").style.display="block";
+}
+  function card1(){
+    document.getElementById("tomato1").style.display="block";
+}
+  function card2(){
+    document.getElementById("mirchi1").style.display="block";
+}
+
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
